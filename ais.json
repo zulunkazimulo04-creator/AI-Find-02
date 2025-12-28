@@ -1,0 +1,52 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "price": "free-trial",
+    "description": "Advanced conversational AI by OpenAI with multimodal capabilities",
+    "link": "https://chat.openai.com",
+    "functions": ["text-generation", "coding-assistance", "research-assistant"],
+    "tags": ["Popular", "Multimodal", "Conversational"],
+    "rating": 4.8
+  },
+  {
+    "id": "midjourney",
+    "name": "MidJourney",
+    "price": "10+",
+    "description": "AI image generation through Discord with artistic styles",
+    "link": "https://midjourney.com",
+    "functions": ["image-generation"],
+    "tags": ["Images", "Art", "Discord"],
+    "rating": 4.6
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "price": "free-trial",
+    "description": "Anthropic's AI assistant focused on safety and helpfulness",
+    "link": "https://claude.ai",
+    "functions": ["text-generation", "research-assistant"],
+    "tags": ["Safe", "Helpful", "Writing"],
+    "rating": 4.5
+  },
+  {
+    "id": "dalle",
+    "name": "DALL-E 3",
+    "price": "free-trial",
+    "description": "OpenAI's advanced image generation model",
+    "link": "https://openai.com/dall-e",
+    "functions": ["image-generation"],
+    "tags": ["OpenAI", "Images", "Advanced"],
+    "rating": 4.7
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "price": "6-10",
+    "description": "Realistic AI voice synthesis and text-to-speech",
+    "link": "https://elevenlabs.io",
+    "functions": ["voice-generation"],
+    "tags": ["Voice", "Audio", "Realistic"],
+    "rating": 4.4
+  }
+]
