@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Finder | Discover Amazing AI Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <h1>AI<span>Finder</span></h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="nav-link"><i class="fas fa-star"></i> Top Picks</a>
+                <a href="#" class="nav-link"><i class="fas fa-fire"></i> Trending</a>
+                <button class="btn-cta">Submit AI Tool</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover the Perfect <span class="highlight">AI Tool</span> for Your Needs</h2>
+            <p class="hero-subtitle">Search through 500+ AI tools for text generation, image creation, coding, and more. Filter by price, ratings, and functionality.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search for AI tools (e.g., 'image generation', 'ChatGPT')..." autocomplete="off">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!-- Quick Filters -->
+            <div class="quick-filters">
+                <span class="filter-label">Popular:</span>
+                <button class="filter-tag">Free Tools</button>
+                <button class="filter-tag">Image AI</button>
+                <button class="filter-tag">Writing Assistants</button>
+                <button class="filter-tag">Video Creation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="home">
+        <div class="container">
+            <!-- Categories Section -->
+            <section class="categories-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-th-large"></i> Browse by Category</h2>
+                    <p class="section-subtitle">Find AI tools based on what you need them to do</p>
+                </div>
+                <div id="functionButtons" class="categories-grid"></div>
+            </section>
+
+            <!-- Featured AI Tools -->
+            <section class="featured-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-crown"></i> Featured AI Tools</h2>
+                    <p class="section-subtitle">Top-rated tools our users love</p>
+                </div>
+                <div class="featured-grid" id="featuredAIs"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Function Detail Page (Hidden by default) -->
+    <section id="functionSection" class="hidden">
+        <div class="container">
+            <div class="function-header">
+                <button id="backHome" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Categories
+                </button>
+                <h2 id="functionTitle" class="function-title"></h2>
+                <p class="function-description" id="functionDescription"></p>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label><i class="fas fa-filter"></i> Filter by:</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="free">Free</option>
+                        <option value="free-trial">Free Trial</option>
+                        <option value="1-5">$1 - $5</option>
+                        <option value="6-10">$6 - $10</option>
+                        <option value="10+">$10+</option>
+                    </select>
+                    <select id="sortFilter" class="filter-select">
+                        <option value="rating">Highest Rated</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+                <div class="results-count">
+                    Showing <span id="resultsCount">0</span> AI tools
+                </div>
+            </div>
+
+            <!-- AI Tools Grid -->
+            <div id="aiList" class="ai-grid"></div>
+
+            <!-- Load More -->
+            <div class="load-more-container">
+                <button id="loadMore" class="load-more-btn hidden">
+                    <i class="fas fa-sync-alt"></i> Load More Tools
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI<span>Finder</span></h3>
+                    </div>
+                    <p>Discover the best AI tools for every task. Updated daily with new tools and features.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Categories</h4>
+                        <a href="#">Text Generation</a>
+                        <a href="#">Image AI</a>
+                        <a href="#">Video Tools</a>
+                        <a href="#">Voice Synthesis</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">AI Glossary</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">API Documentation</a>
+                        <a href="#">Submit Tool</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AIFinder. All rights reserved. Made with <i class="fas fa-heart" style="color:#ff4757;"></i> for the AI community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
