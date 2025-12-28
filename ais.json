@@ -1,52 +1,58 @@
 [
   {
-    "id": "chatgpt",
     "name": "ChatGPT",
-    "price": "free-trial",
-    "description": "Advanced conversational AI by OpenAI with multimodal capabilities",
     "link": "https://chat.openai.com",
-    "functions": ["text-generation", "coding-assistance", "research-assistant"],
-    "tags": ["Popular", "Multimodal", "Conversational"],
-    "rating": 4.8
+    "price": "free-trial",
+    "description": "Versatile AI for conversation, writing, and creative tasks.",
+    "functions": ["text generation", "coding assistance", "image generation"],
+    "ratings": { "text generation": [5,4,5], "image generation": [4,5] }
   },
   {
-    "id": "midjourney",
-    "name": "MidJourney",
-    "price": "10+",
-    "description": "AI image generation through Discord with artistic styles",
-    "link": "https://midjourney.com",
-    "functions": ["image-generation"],
-    "tags": ["Images", "Art", "Discord"],
-    "rating": 4.6
-  },
-  {
-    "id": "claude",
     "name": "Claude",
-    "price": "free-trial",
-    "description": "Anthropic's AI assistant focused on safety and helpfulness",
     "link": "https://claude.ai",
-    "functions": ["text-generation", "research-assistant"],
-    "tags": ["Safe", "Helpful", "Writing"],
-    "rating": 4.5
-  },
-  {
-    "id": "dalle",
-    "name": "DALL-E 3",
     "price": "free-trial",
-    "description": "OpenAI's advanced image generation model",
-    "link": "https://openai.com/dall-e",
-    "functions": ["image-generation"],
-    "tags": ["OpenAI", "Images", "Advanced"],
-    "rating": 4.7
+    "description": "Helpful AI assistant focused on reasoning and safety.",
+    "functions": ["text generation", "coding assistance"],
+    "ratings": { "text generation": [4,5], "coding assistance": [5,5] }
   },
   {
-    "id": "elevenlabs",
+    "name": "MidJourney",
+    "link": "https://midjourney.com",
+    "price": "10+",
+    "description": "Powerful AI art generator via Discord.",
+    "functions": ["image generation"],
+    "ratings": { "image generation": [5,5,4] }
+  },
+  {
+    "name": "Runway",
+    "link": "https://runwayml.com",
+    "price": "free-trial",
+    "description": "Creative tools for video and image generation.",
+    "functions": ["video generation", "image generation"],
+    "ratings": { "video generation": [5,4,5], "image generation": [4,4] }
+  },
+  {
     "name": "ElevenLabs",
-    "price": "6-10",
-    "description": "Realistic AI voice synthesis and text-to-speech",
     "link": "https://elevenlabs.io",
-    "functions": ["voice-generation"],
-    "tags": ["Voice", "Audio", "Realistic"],
-    "rating": 4.4
+    "price": "6-10",
+    "description": "Realistic AI voice synthesis and cloning.",
+    "functions": ["voice generation"],
+    "ratings": { "voice generation": [5,5,4,5,5] }
+  },
+  {
+    "name": "DALL-E",
+    "link": "https://openai.com/dall-e",
+    "price": "free-trial",
+    "description": "Advanced text-to-image generation by OpenAI.",
+    "functions": ["image generation"],
+    "ratings": { "image generation": [5,4,4] }
+  },
+  {
+    "name": "Synthesia",
+    "link": "https://www.synthesia.io",
+    "price": "10+",
+    "description": "Create professional videos with AI avatars.",
+    "functions": ["video avatars"],
+    "ratings": { "video avatars": [5,4,5] }
   }
 ]
